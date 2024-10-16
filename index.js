@@ -51,7 +51,7 @@ app.get("/", (req, res) => {
       </head>
       <body>
         <div class="container">
-          <h1>Random Fact     V2</h1>
+          <h1>----Random Fact     V2</h1>
           <p>${randomFact}</p>
           <p>Current time: ${currentTime}</p>
         </div>
