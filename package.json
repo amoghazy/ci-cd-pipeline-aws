@@ -1,0 +1,22 @@
+{
+  "name": "project-ci-cd",
+  "version": "1.0.0",
+  "description": "A simple Express application for handling requests.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "eslint .",
+    "stop": "pkill -f index.js"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "application"
+  ],
+  "author": "Ahmed Moghazy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
