@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "no op before install"
+echo "before install"
+sudo rm -rf /home/ubuntu/srv/*
