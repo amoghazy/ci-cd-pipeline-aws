@@ -1,12 +1,13 @@
 version: 0.0
 os: linux
-
 files:
 - source: /
   destination: /home/ubuntu/srv
 
 hooks:
-
+  BeforeInstall:
+  - location: before_install.sh
+  - timeout: 30
   AfterInstall:
   - location: after_install.sh
   - timeout: 30
