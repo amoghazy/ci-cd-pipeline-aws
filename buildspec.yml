@@ -1,5 +1,4 @@
 version: 0.2
-
 phases:
   install:
     runtime-versions:
@@ -17,7 +16,6 @@ phases:
     - echo "Removing unwanted files..."
     - rm -f .gitignore README.md
     - echo "Preparing to package artifacts for deployment..."
-
 artifacts:
   files:
   - 'appspec.yml'
