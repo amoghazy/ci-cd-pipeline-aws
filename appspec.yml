@@ -5,7 +5,7 @@ files:
   destination: /home/ubuntu/srv
 hooks:
   BeforeInstall:
-  - location: before_install
+  - location: before_install.sh
     timeout: 300
     runas: root
 
