@@ -3,6 +3,11 @@ os: linux
 files:
 - source: /
   destination: /home/ubuntu/srv
+hooks:
+  BeforeInstall:
+  - location: before_install
+    timeout: 300
+    runas: root
 
 
 
