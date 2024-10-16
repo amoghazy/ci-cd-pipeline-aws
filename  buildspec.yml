@@ -23,5 +23,6 @@ artifacts:
   - 'appspec.yml'
   - 'scripts/*'
   - '**/*'
-
+  - '!**/.gitignore'
+  - '!**/README.md'
   discard-paths: yes
