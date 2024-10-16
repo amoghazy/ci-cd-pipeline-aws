@@ -1,22 +1,21 @@
-
-const express = require('express');
+const express = require("express");
 const app = express();
 const port = 3000;
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   const facts = [
-    'The Earth rotates at about 1,000 miles per hour.',
-    'Honey never spoils.',
-    'The human brain has about 86 billion neurons.',
-    'A group of flamingos is called a flamboyance.',
-    'Octopuses have three hearts.',
-    'Bananas are berries, but strawberries are not.',
-    'A day on Venus is longer than its year.',
-    'The Great Wall of China is not visible from space with the naked eye.',
-    'Cows have best friends and can feel stressed when separated.',
-    'The shortest war in history lasted 38 minutes.',
+    "The Earth rotates at about 1,000 miles per hour.",
+    "Honey never spoils.",
+    "The human brain has about 86 billion neurons.",
+    "A group of flamingos is called a flamboyance.",
+    "Octopuses have three hearts.",
+    "Bananas are berries, but strawberries are not.",
+    "A day on Venus is longer than its year.",
+    "The Great Wall of China is not visible from space with the naked eye.",
+    "Cows have best friends and can feel stressed when separated.",
+    "The shortest war in history lasted 38 minutes.",
   ];
   const randomFact = facts[Math.floor(Math.random() * facts.length)];
   const currentTime = new Date().toLocaleTimeString();
@@ -52,7 +51,7 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <div class="container">
-          <h1>Random Fact</h1>
+          <h1>Random Fact     V2</h1>
           <p>${randomFact}</p>
           <p>Current time: ${currentTime}</p>
         </div>
@@ -60,8 +59,6 @@ app.get('/', (req, res) => {
     </html>
   `);
 });
-
-
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
